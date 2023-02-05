@@ -5,7 +5,6 @@ interface propInterface {
   element: string
 }
 
-
 export const TodoList = (props: propInterface) => {
   const[checked, setChecked] = useState(false);
   const handleChange = () => {

@@ -2,11 +2,6 @@
 import React, { useState } from "react";
 import { TodoList } from "./TodoList";
 
-interface primeInterface {
-  text: string;
-  done: boolean;
-}
-
 export const Searchbox = () => {
   const [allTodo, setAllTodo] = useState<string[]>(["Sample"]);
   const [newTodo, setNewTodo] = useState<string>("");
