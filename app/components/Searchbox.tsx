@@ -6,7 +6,6 @@ export const Searchbox = () => {
   const [allTodo, setAllTodo] = useState<string[]>(["Sample"]);
   const [newTodo, setNewTodo] = useState<string>("");
 
-  console.log(newTodo, allTodo);
   return (
     <>
       <div className="flex space-x-4 mt-8 ">
@@ -28,8 +27,8 @@ export const Searchbox = () => {
         </button>
       </div>
       <>
-        {allTodo.map((todo) => {
-          return <TodoList element={todo} />;
+        {allTodo.map((todo, index) => {
+          return <TodoList key={index} element={todo} />;
         })}
       </>
     </>
